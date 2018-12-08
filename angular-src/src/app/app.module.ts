@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+=======
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+>>>>>>> 853c03a087cdda08f25540e7f0f8f95f8535961c
 import {RouterModule, Routes} from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
