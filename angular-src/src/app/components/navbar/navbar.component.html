@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 navbar navbar-expand-lg navbar-dark bg-light border-bottom shadow-sm">
     <h5 class="my-0 mr-md-auto font-weight-normal"><a class="p-2 text-dark" href="#" [routerLink]="['/']">MEAN Auth App</a></h5>
     <nav class="my-2 my-md-0 mr-md-3">
@@ -8,3 +9,27 @@
     </nav>
     <a class="btn btn-outline-primary" href="#" [routerLink]="['/']">Login</a>
   </div>
+=======
+<nav class="navbar navbar-expand-md navbar-inverse bg-dark ">
+  <a class="navbar-brand" href="#">MEAN Auth</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse row flex-nowrap justify-content-between align-items-center" id="navbarsExampleDefault">
+    <ul class="nav navbar-nav navbar-left">
+      <li [routerLinkActive]="['active']" [routerLinkActiveOptions]= "{exact:true}">
+        <a class="nav-link" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]= "{exact:true}">
+            <a class="nav-link" [routerLink]="['/login']">Login <span class="sr-only">(current)</span></a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]= "{exact:true}">
+              <a class="nav-link"[routerLink]="['/register']">Register <span class="sr-only">(current)</span></a>
+          </li>
+      </ul>
+  </div>
+</nav>
+>>>>>>> 853c03a087cdda08f25540e7f0f8f95f8535961c

@@ -1,7 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+<<<<<<< HEAD
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+=======
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+>>>>>>> 853c03a087cdda08f25540e7f0f8f95f8535961c
 import {RouterModule, Routes} from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,8 +23,14 @@ const appRoutes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
   {path: 'dashboard', component: DashboardComponent},
+<<<<<<< HEAD
   {path: 'profile', component: ProfileComponent},
 ];
+=======
+  {path: 'profile', component: ProfileComponent}
+
+]
+>>>>>>> 853c03a087cdda08f25540e7f0f8f95f8535961c
 
 @NgModule({
   declarations: [
@@ -34,9 +45,15 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
+<<<<<<< HEAD
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
+=======
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
+
+>>>>>>> 853c03a087cdda08f25540e7f0f8f95f8535961c
   ],
   providers: [],
   bootstrap: [AppComponent]
