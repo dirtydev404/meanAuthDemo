@@ -22,7 +22,6 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(123);
     const user = {
       fname: this.fName,
       lname: this.lName,
@@ -32,7 +31,7 @@ export class RegisterComponent implements OnInit {
     };
 
     // Required Feilds
-    if (!this.validateService.validateRegister(user.email)) {
+    if (!this.validateService.validateRegister(user)) {
       console.log('Please fill out everything!');
       return false;
     }
