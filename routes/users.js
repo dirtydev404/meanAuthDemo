@@ -8,7 +8,8 @@ const User = require('../models/users');
 //register
 router.post('/register', (req, res, next) =>{
     let newUser = new User({
-        name: req.body.name,
+        fName: req.body.fName,
+        lName: req.body.lName,
         email: req.body.email,
         username: req.body.username,
         password: req.body.password
@@ -18,7 +19,7 @@ router.post('/register', (req, res, next) =>{
         if(err){
             res.json({success: false, msg:'Failed to register new user'});
         } else{
-            res.json({success: true, msg:'Registered new user'});   
+            res.json({success: true, msg:'Registered new user'});
         }
     });
 });
@@ -32,7 +33,7 @@ router.post('/authenticate', (req, res, next) =>{
         if(err) throw err;
         if(!user){
             return res.json({success: false, msg:'User not authenicated'});
-        } 
+        }
         User.comparePassword(password, user.password, (err, isMatch) => {
             if(err) throw err;
             if(isMatch){
